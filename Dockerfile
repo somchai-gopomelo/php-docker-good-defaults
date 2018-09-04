@@ -1,10 +1,4 @@
-FROM yourdockername/base-php-nginx:latest
-
-# add bitbucket and github to known hosts for ssh needs
-WORKDIR /root/.ssh
-RUN chmod 0600 /root/.ssh \
-    && ssh-keyscan -t rsa bitbucket.org >> known_hosts \
-    && ssh-keyscan -t rsa github.com >> known_hosts
+FROM php:7.2.4-fpm-alpine
 
 ##
 ## Compose Package Manager
