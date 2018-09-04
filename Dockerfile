@@ -1,4 +1,4 @@
-FROM php:7.2.4-fpm-alpine
+FROM r.cfcr.io/somchaigopomelo/somchaigopomelo/phpdockergooddefaults
 
 ##
 ## Compose Package Manager
